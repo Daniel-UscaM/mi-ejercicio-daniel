@@ -10,3 +10,82 @@
     <p>Este es mi primer archivo gestionado con Git y GitHub.</p>
 </body>
 </html>
+
+
+
+git branch daniel
+git checkout daniel
+git add .
+git commit -m "mensaje"
+git push -u origin daniel
+
+
+git checkout main
+git pull
+git merge daniel
+git add .
+git commit -m "mensaje"
+git push
+
+1. Configuración Inicial
+git config --global user.name "TuNombre"
+git config --global user.email "tuemail@example.com"
+
+
+### **2. Crear un Repositorio en GitHub**
+
+1. Ve a [GitHub](https://github.com/) e inicia sesión.
+2. Crea un nuevo repositorio con el nombre: `mi-ejercicio-git`.
+    - Marca la opción para inicializar con un `README.md`.
+
+
+3. Clonar el Repositorio en tu PC
+    git clone <URL_DE_TU_REPOSITORIO>
+    cd mi-ejercicio-git
+
+4. Crear una Rama Nueva
+git checkout -b feature-inicial
+
+### **5. Realizar Cambios en el Repositorio**
+
+1. Crea un archivo `index.html` y añade este contenido:
+    
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Ejercicio Git</title>
+    </head>
+    <body>
+        <h1>Hola, GitHub</h1>
+        <p>Este es mi primer archivo gestionado con Git y GitHub.</p>
+    </body>
+    </html>
+    ```
+    
+2. Guarda el archivo.
+
+6. Realizar un Commit
+Añade el archivo al área de staging:
+git add index.html
+Realiza un commit con un mensaje descriptivo:
+git commit -m "Añadido index.html con contenido inicial"
+
+
+7. Fusionar la Rama al Main
+Cambia a la rama principal:
+git checkout main
+
+Fusiona la rama feature-inicial en main:
+git merge feature-inicial
+
+
+8. Subir Cambios a GitHub
+git push origin main
+
+
+
+
+
